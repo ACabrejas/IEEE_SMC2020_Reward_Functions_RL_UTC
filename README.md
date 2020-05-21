@@ -1,5 +1,5 @@
 # Assessment of Reward Functions for Reinforcement Learning Vehicular Traffic Signal Control Under Real-World Limitations
-Submitted to IEEE Systems, Man and Cybernetics 2020
+Submitted to IEEE Systems, Man and Cybernetics 2020. Copyright lies with Alvaro Cabrejas Egea, Shaun Howell, Maksis Knutins, Colm Connaughton, University of Warwick, Vivacity Labs and IEEE.
 
 ## Abstract
 Adaptive traffic signal control is one key avenue for mitigating the growing consequences of traffic congestion.
