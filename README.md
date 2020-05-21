@@ -1,4 +1,6 @@
-# SMC2020_Reward_Functions_RL_UTC
+# Assessment of Reward Functions for Reinforcement Learning Vehicular Traffic Signal Control Under Real-World Limitations
+
+## Submitted to IEEE Systems, Man and Cybernetics 2020
 
 Adaptive traffic signal control is one key avenue for mitigating the growing consequences of traffic congestion.
 Incumbent solutions such as SCOOT and SCATS require regular and time-consuming calibration, can’t optimise well for multiple road use modalities, and require the manual curation of many implementation plans.
