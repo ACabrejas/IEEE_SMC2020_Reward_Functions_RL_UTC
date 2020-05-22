@@ -15,20 +15,20 @@
     
 \begin{document}
 
-\title{Assessment of Reward Functions for Reinforcement Learning Vehicular Traffic Signal Control Under Real-World Limitations\\
+\title{Assessment of Reward Functions for Reinforcement Learning Traffic Signal Control under Real-World Limitations\\
 
 \thanks{*This work was part funded by InnovateUK grant 104219 and part funded by EPSRC Grant EP/L015374. We are also grateful to the Alan Turing Institute for support in the initial stages.}
 }
 
 \author{\IEEEauthorblockN{Alvaro Cabrejas Egea\IEEEauthorrefmark{1}\IEEEauthorrefmark{2}, Shaun Howell\IEEEauthorrefmark{2}, Maksis Knutins\IEEEauthorrefmark{2} and Colm Connaughton\IEEEauthorrefmark{4}}
 \IEEEauthorblockA{\IEEEauthorrefmark{1}MathSys Centre for Doctoral Training\\
-University of Warwick, Coventry, UK CV4 7AL\\
+University of Warwick, Coventry CV4 7AL, United Kingdom\\
 a.cabrejas-egea@warwick.ac.uk}
 \IEEEauthorblockA{\IEEEauthorrefmark{2}Vivacity Labs\\
-London, UK NW5 3AQ\\
+London NW5 3AQ, United Kingdom\\
 shaun@vivacitylabs.com, maksis@vivacitylabs.com}
 \IEEEauthorblockA{\IEEEauthorrefmark{3}Warwick Mathematics Institute\\
-University of Warwick, Coventry, UK CV4 7AL\\
+University of Warwick, Coventry CV4 7AL, United Kingdom\\
 c.p.connaughton@warwick.ac.uk}
 }
 
@@ -49,17 +49,17 @@ We find that speed maximisation resulted in the lowest average waiting times acr
 \end{abstract}
 
 \begin{IEEEkeywords}
-Reinforcement Learning, Urban Traffic Control, Reward Function
+Reinforcement Learning, Urban Traffic Control, Smart Cities, Agent-Based Modeling
 \end{IEEEkeywords}
 
 \section{Introduction}
 Improving the operation of urban road networks can significantly reduce traffic congestion, as well as promote active travel and public transport within a city and reduce emissions.
 Optimising the timings of adaptive traffic signals can play a large role in achieving this by making effective use of green lights in response to the demand levels on each approach to a junction and by promoting progression across multiple junctions.
-In the UK, the main incumbent algorithms are 'microprocessor optimised vehicle actuation' (MOVA) for isolated junctions, and 'split, cycle and offset optimisation technique' (SCOOT) for regions of  up to 30 signalised junctions.
-However, these algorithms have been improved only incrementally since their initial development around 1980, and so do not take advantage of either modern traffic data sources, nor modern computational resource. Modern traffic data sources, such as vision-based above-ground detectors, are able to provide much richer information about the road network, for example by providing live occupancy, flow, class of vehicle (e.g. car, van, bus) and individual vehicles' positions and speeds.
+In the UK, the main incumbent algorithms are 'Microprocessor Optimised Vehicle Actuation' (MOVA) \cite{MOVA} for isolated junctions, and 'Split, Cycle and Offset Optimisation technique' (SCOOT) \cite{SCOOT} for regions of  up to 30 signalised junctions.
+However, these algorithms have been improved only incrementally since their initial development in the 1980s, and so do not take advantage of either modern traffic data sources, nor modern computational resources. Modern traffic data sources, such as vision-based above-ground detectors, are able to provide much richer information about the road network, for example by providing live occupancy, flow, class of vehicle (e.g. car, van, bus) and individual vehicles' positions and speeds.
 
 Reinforcement learning (RL) has been investigated as a potential next step in urban traffic control (UTC) systems, demonstrating the potential to outperform even well-calibrated systems currently in use \cite{wei2019a}.
-However most of the work to date is not intended to be directly applied to the real world. As such, all observed works in the literature overlook operational limitations of this application of RL.
+However, most of the work to date is not intended to be directly applied to the real world. As such, all observed works in the literature overlook operational limitations of this application of RL.
 Further, there is a gap in the literature regarding the choice of reward function for such an RL system, which is a critical aspect.
 This paper provides a robust comparison of reward functions for RL, in the context of a junction in Greater Manchester, UK, a simulation of which has been calibrated using extensive data from Vivacity Labs vision-based sensors.
 This research is directly translatable to real-world applications of the technology, and has since been deployed to manage real traffic. 
@@ -74,12 +74,12 @@ Section \ref{results} shows the results of the experiments in terms of average w
 
 \section{Related Work} \label{lit}
 Previous studies have considered RL for UTC without focusing specifically on the choice of reward functions.
-Initial research was centered around proof-of-concept, with studies such as \cite{wiering2000} and \cite{abdulhai2003} advocating for its potential use, and the ability of Q-Learning to perform better \cite{abdulhai2010} \cite{prashanth2011} than traditional UTC methods such as SCOOT \cite{SCOOT} and SCATS \cite{SCATS}. 
+Initial research was centered around proof-of-concept, with studies such as \cite{wiering2000} and \cite{abdulhai2003} advocating for its potential use, and the ability of Q-Learning to perform better \cite{abdulhai2010} \cite{prashanth2011} than traditional UTC methods such as MOVA \cite{MOVA}, SCOOT \cite{SCOOT} and SCATS \cite{SCATS}. 
 Later research looked into neural networks as a function approximator to estimate the value of state-action pairs whilst addressing discretisation issues raised previously \cite{richter2007} \cite{araghi2013}.
 Recent research makes use of deep RL to estimate the state-action values for each state \cite{mannion} \cite{vanderpol2016} \cite{genders2016} \cite{gao2017} \cite{wan2018} \cite{liang2018} \cite{zhou2019} or to learn a policy directly that maps states to actions \cite{richter2007} \cite{mousavi2017} \cite{genders2018} \cite{gendersthesis} \cite{aslani2019}.
 
 A number of publications have compiled RL methods. In \cite{rlparam}, early table based methods are summarised; in \cite{mannion} reward functions in a multi-junction network (delay between actions, difference in delay between actions, minimisation and balancing of queues, and minimising stops) are compared, and in \cite{genders2018} three different state representations are compared, finding similar performance with each. As the outcome was found not to be sensitive to state representation, the present work keeps the state representation constant. More recent studies focus on different RL approaches to this problem \cite{yau}, and \cite{wei2019} considers state representation, reward function, action definition and model specific distinctions (online-offline, policy-value, tabular-function approximation) in a survey across the field, but without performing comparisons.
-However, previous work typically approximates in terms of road geometry, traffic demand, and operational constraints, creating models of intersections that preclude real-world applicability.
+Previous work typically approximates in terms of road geometry, traffic demand, and operational constraints, creating models of intersections that preclude real-world applicability.
 
 This points to a gap in the literature of directly comparing a broad range of reward functions, in a well-calibrated, geometrically-accurate simulation which accounts for real-world limitations (e.g. safety constraints): this is the topic of this paper.
 
@@ -88,9 +88,9 @@ This points to a gap in the literature of directly comparing a broad range of re
 An intelligent agent is an entity which acts towards a goal based on observations and a decision making process. RL is an area of Machine Learning which focuses on how agents can learn a policy $\pi$ based on extended interaction with an environment.
 This approach treats the problem as a Markov Decision Process (MDP), defined in terms of the  $\mathrm{<S, A, T, R, \gamma>}$ tuple, defined in accordance to what is shown in Fig. \ref{fig:RL}:
 \begin{itemize}
-    \item $\mathrm{S}$: Set of possible observable states. At time $t$, the agent will be provided with an observation of the environment state variables $s_t \in \mathrm{S}$.
+    \item $\mathrm{S}$: Set of possible observable states. At time $t$, the agent will be provided with an observation $O_t=\{s^1_t, ..., s^i_t, ..., s^n_t\}$ of the state variables $s^i_t \in \mathrm{S}$.
     
-    \item $\mathrm{A}$: Set of possible actions that the agent can execute in the environment. After being provided with $\mathrm{s_t}$ , the agent chooses an action $a_t \in \mathrm{A}$.
+    \item $\mathrm{A}$: Set of possible actions that the agent can execute in the environment. After being provided with $\mathrm{s_t}$, the agent chooses an action $a_t \in \mathrm{A}$.
     
     \item $\mathrm{T}$: Probabilistic state transition function.
     
@@ -102,7 +102,7 @@ This approach treats the problem as a Markov Decision Process (MDP), defined in 
 \begin{figure}[thpb]
     \centering
     \includegraphics[width=\linewidth]{figures/rl.PNG}
-    \caption{Schematic representation of information flows between Environment and Agent.}
+    \caption{Schematic representation of information flows between Environment and Agent in a Reinforcement Learning framework.}
     \label{fig:RL}
 \end{figure}
 
@@ -132,7 +132,6 @@ All layers use ReLU as an activation function. The network weights are optimised
 \SetAlgoLined
  Initialise agent network with random parameters $\theta$\;
  Initialise memory $M$ with capacity $L$\;
- Define frequency $F$ for copying weights to target network\;
  \For{each episode}{ 
     measure initial state $s_0$\;
     \While{episode not done}{
@@ -170,7 +169,7 @@ This paper does not consider pedestrians, thus promoting comparability with prio
 \begin{figure}[thpb]
     \centering
     \includegraphics[width=\linewidth]{figures/phases_noped.png}
-    \caption{Allowed stages in the intersection (Stage 3 only serves pedestrians so isn't used here)}
+    \caption{Allowed stages in the intersection (Stage 3 only serves pedestrians so isn't used). Stage 1 is an intermediate stage required to reach stage 2.}
     \label{fig:phases}
 \end{figure}
 
@@ -191,7 +190,7 @@ Stage 4 serves the side roads, which do experience significant demand.
 In each timestep when a stage has been active longer than the minimum green time, the agent generates state-action values for each potential stage and the highest value is chosen according to an $\epsilon$-greedy policy \cite{suttonbarto}. If the agent chooses the same stage, that stage is extended by 0.6s, otherwise the controller begins the transition to the other stage.
 The extension can be chosen indefinitely, as long as the agent identifies it as the best action.
 
-The complexity in the decision-making stems from the combination of using of Stage 1 as an intermediate state and the extensions to the stage duration.
+The complexity in the decision-making stems from the combination of using Stage 1 as an intermediate state and the extensions to the stage duration.
 Traditional RL for UTC regards each Stage as an action for the agent to take, based on the instantaneous state of the system.
 However, in the case of the intermediate Stage 1, the agent has to choose when to start the transition without knowledge of the future state when Stage 2 begins.
 Regarding the extensions, given that their length is smaller than that of the initial phase, their impact on the state will be smaller, generating a distribution of reward and state-action value outcomes that the agent needs to approximate.
@@ -276,7 +275,7 @@ This reward function provides both punishment and reward centered around zero.
 The reward will be the same as in the point above, but divided by an estimate of the demand level.
 \begin{equation}
     r_t = -\frac{1}{\hat{d}} \sum_{v\in V_t}  \sum_{t^p}^t ts * \big( 1-\frac{s_v}{s_{max}} \big)
-\label{eq:delay}
+\label{eq:delay_dn}
 \end{equation}
 
 \subsection{Average Speed based Rewards}
@@ -303,7 +302,7 @@ The reward will be the total number of vehicles that cleared the intersection be
 \end{equation}
 
 \subsubsection{Other reward functions}
-There are several other reward functions which were not considered. For example minimising the frequency of signal change \cite{vanderpol2016} \cite{wei2018}, and accident avoidance \cite{vanderpol2016}: both of these concerns are already addressed by traffic signal controllers. Also, pressure has been used as a reward function in the control of a large network \cite{yau} \cite{wei2019} \cite{varaiya2013} \cite{wei2018} \cite{wei2019a} \cite{chen2020} and achieved good results however this requires data from upstream and downstream of the target junction, so is beyond the current scope.
+There are several other reward functions which were not considered. For example minimising the frequency of signal change \cite{vanderpol2016} \cite{wei2018}, and accident avoidance \cite{vanderpol2016}: both of these concerns are already addressed by traffic signal controllers. Also, pressure has been used as a reward function in the control of a large network \cite{yau} \cite{wei2019} \cite{varaiya2013} \cite{wei2018} \cite{wei2019a} \cite{chen2020} and achieved good results; however, this requires data from upstream and downstream of the target junction, so is beyond the current scope.
 
 \section{Experimental Setup}\label{exp_setup}
 \subsection{Training Process}
@@ -332,31 +331,31 @@ In this section, the distribution of average waiting times per vehicle across th
 
 Figures \ref{fig:low} - \ref{fig:high} show for each agent, the distribution of average waiting times per vehicle across 100 repetitions of each scenario as described in the section above.
 The throughput reward function is not shown to improve graph readability, as it performed poorly by all metrics. 
-Complete corresponding results are reported in Table \ref{table1}.
+Complete corresponding results are reported in Table I.
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=\linewidth]{figures/rand_2_1_ordered_color_DS.pdf}
+    \includegraphics[width=\linewidth]{figures/rand_2_1_ordered_color_DS.jpg}
     \caption{Distribution and medians of average waiting time in seconds across agents in Low Demand scenario. Sub-saturation demand of 1714 vehicles/hour (1 vehicle/2.1 seconds).}
     \label{fig:low}
 \end{figure}
 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=\linewidth]{figures/rand_1_7_ordered_color_DS.pdf}
+    \includegraphics[width=\linewidth]{figures/rand_1_7_ordered_color_DS.jpg}
     \caption{Distribution and medians of average waiting time in seconds across agents in Medium Demand scenario. Near-saturation demand of 2117 vehicles/hour (1 vehicle/1.7 seconds).}
     \label{fig:mid}
 \end{figure}
 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=\linewidth]{figures/rand_1_5_ordered_color_DS.pdf}
+    \includegraphics[width=\linewidth]{figures/rand_1_5_ordered_color_DS.jpg}
     \caption{Distribution and medians of average waiting time in seconds across agents in High Demand scenario. Over-saturation demand of 2400 vehicles/hour (1 vehicle/1.5 seconds).}
     \label{fig:high}
 \end{figure}
 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=\linewidth]{figures/stacked_average_delay_ordered_by_sum_DS.pdf}
+    \includegraphics[width=\linewidth]{figures/stacked_average_delay_ordered_by_sum_DS.jpg}
     \caption{Stacked bar chart of Average Waiting Time across scenarios.}
     \label{fig:stack}
 \end{figure}
@@ -374,6 +373,7 @@ Throughput was found to be consistently the worst-performing of the reward funct
 
 The rewards based on difference in delay (Delta Wait Time and Delta Time Lost), which were used in seven previous items of research as a most desirable reward function, were amongst the worst performers.
 
+%\addtolength{\textheight}{-3.5cm} 
 
 \section{Discussion and Conclusion}
 This paper has explored the performance of several reward functions for deep Q-learning agents in the context of Urban Traffic Control. The paper reaffirms earlier findings that RL outperforms deterministic baseline algorithms.
@@ -386,7 +386,6 @@ In busier conditions, which are more important to transport authorities, RL prov
 Rewarding based on delay minimisation or stopped time may perform worse than speed-based rewards as they encode information about previous timesteps, whereas queue lengths and vehicle speeds are snapshots at a single timestep, which better suits the underpinning Markov Decision Process framing of the problem.
 Speed maximisation may have yielded better results than queue minimisation under high demand as it penalises the agent for vehicles which are moving slowly forward in congested conditions, which would not have been penalised by the queue length reward.
 This would also not have been captured by the stopped time reward, which may explain its worse performance overall. One key finding is that whilst rewards based on difference in delay were found to perform well in earlier works, this was found to perform poorly in the present work.
-
 The Maximum Occupancy reference agent performs well at low demand, but mediocre at medium demand and poorly at high demand.
 It does not extend stage durations in busy traffic when the density of vehicles using the active stage is slightly lower than that of stationary queuing traffic.
 This results in shorter than optimal stage lengths and so too much time is wasted in interstage transitions.
@@ -397,23 +396,26 @@ From a visual inspection via the simulator of the best RL agent's behaviour, it 
 A key benefit to the DQN approach is that it can learn how eagerly it should extend stages under varying conditions at a specific site, rather than requiring manual calibration.
 This automated calibration can be repeated regularly so that the site continues to perform well long-term without manual intervention.
 
-One limitation of the study is that the results presented only relate to the training of a deep Q-learning agent as specified in Section \ref{methods}, and are not necessarily representative of the performance on other type of architectures such as those representing the state as an image and processing it with Convolutional Neural Networks, or Policy Gradient methods.
+One limitation of the study is that the results presented only relate to the training of a deep Q-learning agent as specified in Section \ref{methods}, and are not necessarily representative of the performance in other type of architectures such as those representing the state as an image and processing it with Convolutional Neural Networks, or Policy Gradient methods.
 Another limitation is that most intersections found in an urban setting do not exclusively serve vehicles. As stated in Section \ref{methods}, a similar exploration including pedestrians is left as future work for modal prioritisation based rewards.
 
-\addtolength{\textheight}{-12.5cm} 
+
 
 \section*{Acknowledgment}
 
-A.C.E thanks N. Walton and W. Chernicoff for the insights and discussions that led to this paper and the Toyota Mobility Foundation for previous support that made this work possible. Vivacity Labs thanks Transport for Greater Manchester for helping take this work from simulation to the real world, Immense for their work calibrating the simulation model, and InnovateUK for funding that made the work possible.
+A.C.E thanks N. Walton and W. Chernicoff for the insights and discussions that led to this paper, and the Toyota Mobility Foundation for previous support that made this work possible. Vivacity Labs thanks Transport for Greater Manchester for helping take this work from simulation to the real world, Immense for their work calibrating the simulation model, and InnovateUK for funding that made the work possible.
 
+\addtolength{\textheight}{-9.5cm} 
+%\addtolength{\textheight}{-1.5cm} 
 
 \begin{thebibliography}{00}
+\bibitem{MOVA} Vincent, R. A., \& Peirce, J. R. (1988). 'MOVA': Traffic Responsive, Self-optimising Signal Control for Isolated Intersections. Traffic Management Division, Traffic Group, Transport and Road Research Laboratory.
+\bibitem{SCOOT} Hunt, P. B., Robertson, D. I., Bretherton, R. D., \& Royle, M. C. (1982). The SCOOT on-line traffic signal optimisation technique. Traffic Engineering \& Control, 23(4).
 \bibitem{wei2019a} Wei, H., Chen, C., Zheng, G., Wu, K., Gayah, V., Xu, K., \& Li, Z. (2019, July). PressLight: Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Network. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining (pp. 1290-1298).
 \bibitem{wiering2000} Wiering, M. (2000). Multi-agent reinforcement learning for traffic light control. In Machine Learning: Proceedings of the 17th International Conference (ICML'2000) (pp. 1151-1158).
 \bibitem{abdulhai2003} Abdulhai, B., Pringle, R., \& Karakoulas, G. J. (2003). Reinforcement learning for true adaptive traffic signal control. Journal of Transportation Engineering, 129(3), 278-285.
 \bibitem{abdulhai2010} El-Tantawy, S., \& Abdulhai, B. (2010, September). An agent-based learning towards decentralized and coordinated traffic signal control. In 13th International IEEE Conference on Intelligent Transportation Systems (pp. 665-670). IEEE.
 \bibitem{prashanth2011} Prashanth, L. A., \& Bhatnagar, S. (2010). Reinforcement learning with function approximation for traffic signal control. IEEE Transactions on Intelligent Transportation Systems, 12(2), 412-421.
-\bibitem{SCOOT} Hunt, P. B., Robertson, D. I., Bretherton, R. D., \& Royle, M. C. (1982). The SCOOT on-line traffic signal optimisation technique. Traffic Engineering \& Control, 23(4).
 \bibitem{SCATS} Lowrie, P. R. (1990). Scats, Sydney Co-ordinated Adaptive Traffic System: A traffic responsive method of controlling urban traffic.
 \bibitem{richter2007} Richter, S., Aberdeen, D., \& Yu, J. (2007). Natural actor-critic for road traffic optimisation. In Advances in neural information processing systems (pp. 1169-1176).
 \bibitem{araghi2013} Araghi, S., Khosravi, A., Johnstone, M., \& Creighton, D. (2013, October). Intelligent traffic light control of isolated intersections using machine learning methods. In 2013 IEEE International Conference on Systems, Man, and Cybernetics (pp. 3621-3626). IEEE.

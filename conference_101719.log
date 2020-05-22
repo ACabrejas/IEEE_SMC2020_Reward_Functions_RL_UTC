@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  21 MAY 2020 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  22 MAY 2020 13:41
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -366,11 +366,7 @@ l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-02-21 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count271
 \l__pdf_internal_box=\box59
-) (conference_101719.aux
-
-LaTeX Warning: Label `eq:delay' multiply defined.
-
-)
+) (conference_101719.aux)
 \openout1 = `conference_101719.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -480,72 +476,56 @@ Package pdftex.def Info: figures/rl.PNG  used on input line 104.
 <figures/intersection.png, id=25, 675.27281pt x 576.65437pt>
 File: figures/intersection.png Graphic file (type png)
 <use figures/intersection.png>
-Package pdftex.def Info: figures/intersection.png  used on input line 164.
+Package pdftex.def Info: figures/intersection.png  used on input line 163.
 (pdftex.def)             Requested size: 252.0pt x 215.19777pt.
 <figures/phases_noped.png, id=26, 426.09187pt x 453.19313pt>
 File: figures/phases_noped.png Graphic file (type png)
 <use figures/phases_noped.png>
-Package pdftex.def Info: figures/phases_noped.png  used on input line 172.
+Package pdftex.def Info: figures/phases_noped.png  used on input line 171.
 (pdftex.def)             Requested size: 252.0pt x 268.03165pt.
+
+Underfull \vbox (badness 7362) has occurred while \output is active []
+
  [3 <./figures/intersection.png> <./figures/phases_noped.png>] [4]
 <figures/table.png, id=35, 1117.17375pt x 830.35219pt>
 File: figures/table.png Graphic file (type png)
 <use figures/table.png>
-Package pdftex.def Info: figures/table.png  used on input line 329.
+Package pdftex.def Info: figures/table.png  used on input line 328.
 (pdftex.def)             Requested size: 252.0pt x 187.30264pt.
-
-
-LaTeX Warning: Reference `table1' on page 5 undefined on input line 335.
-
-<figures/rand_2_1_ordered_color_DS.pdf, id=36, 496.04382pt x 390.54155pt>
-File: figures/rand_2_1_ordered_color_DS.pdf Graphic file (type pdf)
-<use figures/rand_2_1_ordered_color_DS.pdf>
-Package pdftex.def Info: figures/rand_2_1_ordered_color_DS.pdf  used on input l
-ine 338.
-(pdftex.def)             Requested size: 252.0pt x 198.40482pt.
-[5 <./figures/table.png>]
-<figures/rand_1_7_ordered_color_DS.pdf, id=40, 496.04382pt x 390.54155pt>
-File: figures/rand_1_7_ordered_color_DS.pdf Graphic file (type pdf)
-<use figures/rand_1_7_ordered_color_DS.pdf>
-Package pdftex.def Info: figures/rand_1_7_ordered_color_DS.pdf  used on input l
-ine 345.
-(pdftex.def)             Requested size: 252.0pt x 198.40482pt.
-<figures/rand_1_5_ordered_color_DS.pdf, id=41, 496.04382pt x 390.54155pt>
-File: figures/rand_1_5_ordered_color_DS.pdf Graphic file (type pdf)
-<use figures/rand_1_5_ordered_color_DS.pdf>
-Package pdftex.def Info: figures/rand_1_5_ordered_color_DS.pdf  used on input l
-ine 352.
-(pdftex.def)             Requested size: 252.0pt x 198.40482pt.
-<figures/stacked_average_delay_ordered_by_sum_DS.pdf, id=42, 496.04382pt x 390.
-54155pt>
-File: figures/stacked_average_delay_ordered_by_sum_DS.pdf Graphic file (type pd
-f)
-<use figures/stacked_average_delay_ordered_by_sum_DS.pdf>
-Package pdftex.def Info: figures/stacked_average_delay_ordered_by_sum_DS.pdf  u
-sed on input line 359.
-(pdftex.def)             Requested size: 252.0pt x 198.40482pt.
-
-Underfull \hbox (badness 2065) in paragraph at lines 373--374
+<figures/rand_2_1_ordered_color_DS.jpg, id=36, 496.254pt x 390.7398pt>
+File: figures/rand_2_1_ordered_color_DS.jpg Graphic file (type jpg)
+<use figures/rand_2_1_ordered_color_DS.jpg>
+Package pdftex.def Info: figures/rand_2_1_ordered_color_DS.jpg  used on input l
+ine 337.
+(pdftex.def)             Requested size: 252.0pt x 198.4161pt.
+<figures/rand_1_7_ordered_color_DS.jpg, id=37, 496.254pt x 390.7398pt>
+File: figures/rand_1_7_ordered_color_DS.jpg Graphic file (type jpg)
+<use figures/rand_1_7_ordered_color_DS.jpg>
+Package pdftex.def Info: figures/rand_1_7_ordered_color_DS.jpg  used on input l
+ine 344.
+(pdftex.def)             Requested size: 252.0pt x 198.4161pt.
+<figures/rand_1_5_ordered_color_DS.jpg, id=38, 496.254pt x 390.7398pt>
+File: figures/rand_1_5_ordered_color_DS.jpg Graphic file (type jpg)
+<use figures/rand_1_5_ordered_color_DS.jpg>
+Package pdftex.def Info: figures/rand_1_5_ordered_color_DS.jpg  used on input l
+ine 351.
+(pdftex.def)             Requested size: 252.0pt x 198.4161pt.
+<figures/stacked_average_delay_ordered_by_sum_DS.jpg, id=39, 496.254pt x 390.73
+98pt>
+File: figures/stacked_average_delay_ordered_by_sum_DS.jpg Graphic file (type jp
+g)
+<use figures/stacked_average_delay_ordered_by_sum_DS.jpg>
+Package pdftex.def Info: figures/stacked_average_delay_ordered_by_sum_DS.jpg  u
+sed on input line 358.
+(pdftex.def)             Requested size: 252.0pt x 198.4161pt.
+ [5]
+Underfull \hbox (badness 2065) in paragraph at lines 372--373
 []\OT1/ptm/m/n/10 Throughput was found to be con-sis-tently the worst-
  []
 
-
-Underfull \vbox (badness 6125) has occurred while \output is active []
-
- [6 <./figures/rand_2_1_ordered_color_DS.pdf> <./figures/rand_1_7_ordered_color
-_DS.pdf
-
-pdfTeX warning: pdflatex (file ./figures/rand_1_7_ordered_color_DS.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
-> <./figures/rand_1_5_ordered_color_DS.pdf
-
-pdfTeX warning: pdflatex (file ./figures/rand_1_5_ordered_color_DS.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
-> <./figures/stacked_average_delay_ordered_by_sum_DS.pdf
-
-pdfTeX warning: pdflatex (file ./figures/stacked_average_delay_ordered_by_sum_D
-S.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [7]
+[6 <./figures/table.png> <./figures/rand_2_1_ordered_color_DS.jpg> <./figures/r
+and_1_7_ordered_color_DS.jpg> <./figures/rand_1_5_ordered_color_DS.jpg>]
+[7 <./figures/stacked_average_delay_ordered_by_sum_DS.jpg>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -557,45 +537,38 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8] (conference_101719.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[8] (conference_101719.aux) ) 
 Here is how much of TeX's memory you used:
- 5504 strings out of 481545
- 86934 string characters out of 2909744
- 347566 words of memory out of 3000000
- 20667 multiletter control sequences out of 15000+200000
+ 5506 strings out of 481545
+ 86853 string characters out of 2909744
+ 348539 words of memory out of 3000000
+ 20668 multiletter control sequences out of 15000+200000
  570953 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,13n,31p,922b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/bas
-e/8r.enc}<C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/acabrejasegea/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/User
-s/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/acabrejasegea/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
-rs/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy5.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy7.pfb><C:/Users/acabrejasegea/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/acabrejasegea/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-<C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times
-/utmb8a.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmbi8a.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/acabrejasegea/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (8 pages, 908279 bytes).
+{C:/Users/acabrejasegea/AppData/Local/Programs/MiK
+TeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/acabrejasegea/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/acabrejasege
+a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi5.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/acabrejasegea/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/acabrejase
+gea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/acabrejasegea/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/acabrejas
+egea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/acabrejasegea/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/acabrejasegea/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/acabr
+ejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (8 pages, 1655028 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

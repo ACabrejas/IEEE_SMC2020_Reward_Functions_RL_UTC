@@ -1,5 +1,7 @@
 \relax 
 \@nameuse{bbl@beforestart}
+\citation{MOVA}
+\citation{SCOOT}
 \citation{wei2019a}
 \providecommand \oddpage@label [2]{}
 \babel@aux{english}{}
@@ -8,6 +10,7 @@
 \citation{abdulhai2003}
 \citation{abdulhai2010}
 \citation{prashanth2011}
+\citation{MOVA}
 \citation{SCOOT}
 \citation{SCATS}
 \citation{richter2007}
@@ -31,19 +34,19 @@
 \citation{wei2019}
 \citation{watkins}
 \citation{mnih2015}
-\citation{pytorch}
-\citation{kiefer}
-\citation{adam}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}\protected@file@percent }
 \newlabel{lit}{{II}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Problem Background and Definition}{2}\protected@file@percent }
 \newlabel{problem}{{III}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Reinforcement Learning}{2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic representation of information flows between Environment and Agent.}}{2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic representation of information flows between Environment and Agent in a Reinforcement Learning framework.}}{2}\protected@file@percent }
 \newlabel{fig:RL}{{1}{2}}
 \newlabel{eq:discounted_reward}{{1}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Q-Learning and Deep Q-Learning}{2}\protected@file@percent }
 \newlabel{eq:bellman}{{2}{2}}
+\citation{pytorch}
+\citation{kiefer}
+\citation{adam}
 \citation{sumo}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Methods}{3}\protected@file@percent }
 \newlabel{methods}{{IV}{3}}
@@ -52,9 +55,8 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Environment}{3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Intersection model in SUMO.}}{3}\protected@file@percent }
 \newlabel{fig:intersection}{{2}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Allowed stages in the intersection (Stage 3 only serves pedestrians so isn't used here)}}{3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Allowed stages in the intersection (Stage 3 only serves pedestrians so isn't used). Stage 1 is an intermediate stage required to reach stage 2.}}{3}\protected@file@percent }
 \newlabel{fig:phases}{{3}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}State Representation}{3}\protected@file@percent }
 \citation{genders2018}
 \citation{suttonbarto}
 \citation{prashanth2011}
@@ -62,6 +64,7 @@
 \citation{gendersthesis}
 \citation{liang2018}
 \citation{wan2018}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}State Representation}{4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Action Set}{4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {V}Reward Functions}{4}\protected@file@percent }
 \newlabel{rewards}{{V}{4}}
@@ -79,9 +82,6 @@
 \newlabel{eq:delta_wait_time}{{7}{4}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {V-B}3}Waiting Time Adjusted by Demand}{4}\protected@file@percent }
 \newlabel{eq:wait_time_norm}{{8}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Time Lost based Rewards}{4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {V-C}1}Time Lost}{4}\protected@file@percent }
-\newlabel{eq:delay}{{9}{4}}
 \citation{abdulhai2010}
 \citation{mannion}
 \citation{genders2016}
@@ -98,10 +98,13 @@
 \citation{wei2019a}
 \citation{chen2020}
 \citation{highways}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Time Lost based Rewards}{5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {V-C}1}Time Lost}{5}\protected@file@percent }
+\newlabel{eq:delay}{{9}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {V-C}2}Delta Time Lost}{5}\protected@file@percent }
 \newlabel{eq:changedelay}{{10}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {V-C}3}Delay Adjusted by Demand}{5}\protected@file@percent }
-\newlabel{eq:delay}{{11}{5}}
+\newlabel{eq:delay_dn}{{11}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Average Speed based Rewards}{5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {V-D}1}Average Speed}{5}\protected@file@percent }
 \newlabel{eq:avgspeed}{{12}{5}}
@@ -117,48 +120,49 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Evaluation and Scoring}{5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {VII}Results}{5}\protected@file@percent }
 \newlabel{results}{{VII}{5}}
-\newlabel{fig:table}{{VII}{5}}
+\newlabel{fig:table}{{VII}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Distribution and medians of average waiting time in seconds across agents in Low Demand scenario. Sub-saturation demand of 1714 vehicles/hour (1 vehicle/2.1 seconds).}}{6}\protected@file@percent }
 \newlabel{fig:low}{{4}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Distribution and medians of average waiting time in seconds across agents in Medium Demand scenario. Near-saturation demand of 2117 vehicles/hour (1 vehicle/1.7 seconds).}}{6}\protected@file@percent }
 \newlabel{fig:mid}{{5}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Distribution and medians of average waiting time in seconds across agents in High Demand scenario. Over-saturation demand of 2400 vehicles/hour (1 vehicle/1.5 seconds).}}{6}\protected@file@percent }
 \newlabel{fig:high}{{6}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Stacked bar chart of Average Waiting Time across scenarios.}}{6}\protected@file@percent }
-\newlabel{fig:stack}{{7}{6}}
-\bibcite{wei2019a}{1}
-\bibcite{wiering2000}{2}
-\bibcite{abdulhai2003}{3}
-\bibcite{abdulhai2010}{4}
-\bibcite{prashanth2011}{5}
-\bibcite{SCOOT}{6}
-\bibcite{SCATS}{7}
-\bibcite{richter2007}{8}
-\bibcite{araghi2013}{9}
-\bibcite{mannion}{10}
-\bibcite{vanderpol2016}{11}
-\bibcite{genders2016}{12}
-\bibcite{gao2017}{13}
-\bibcite{wan2018}{14}
-\@writefile{toc}{\contentsline {section}{\numberline {VIII}Discussion and Conclusion}{7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Discussion and Conclusion}{6}\protected@file@percent }
+\bibcite{MOVA}{1}
+\bibcite{SCOOT}{2}
+\bibcite{wei2019a}{3}
+\bibcite{wiering2000}{4}
+\bibcite{abdulhai2003}{5}
+\bibcite{abdulhai2010}{6}
+\bibcite{prashanth2011}{7}
+\bibcite{SCATS}{8}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Stacked bar chart of Average Waiting Time across scenarios.}}{7}\protected@file@percent }
+\newlabel{fig:stack}{{7}{7}}
 \@writefile{toc}{\contentsline {section}{References}{7}\protected@file@percent }
-\bibcite{liang2018}{15}
-\bibcite{zhou2019}{16}
-\bibcite{mousavi2017}{17}
-\bibcite{genders2018}{18}
-\bibcite{gendersthesis}{19}
-\bibcite{aslani2019}{20}
-\bibcite{rlparam}{21}
-\bibcite{yau}{22}
-\bibcite{wei2019}{23}
-\bibcite{watkins}{24}
-\bibcite{mnih2015}{25}
-\bibcite{pytorch}{26}
-\bibcite{kiefer}{27}
-\bibcite{adam}{28}
-\bibcite{sumo}{29}
-\bibcite{suttonbarto}{30}
-\bibcite{varaiya2013}{31}
-\bibcite{wei2018}{32}
-\bibcite{chen2020}{33}
-\bibcite{highways}{34}
+\bibcite{richter2007}{9}
+\bibcite{araghi2013}{10}
+\bibcite{mannion}{11}
+\bibcite{vanderpol2016}{12}
+\bibcite{genders2016}{13}
+\bibcite{gao2017}{14}
+\bibcite{wan2018}{15}
+\bibcite{liang2018}{16}
+\bibcite{zhou2019}{17}
+\bibcite{mousavi2017}{18}
+\bibcite{genders2018}{19}
+\bibcite{gendersthesis}{20}
+\bibcite{aslani2019}{21}
+\bibcite{rlparam}{22}
+\bibcite{yau}{23}
+\bibcite{wei2019}{24}
+\bibcite{watkins}{25}
+\bibcite{mnih2015}{26}
+\bibcite{pytorch}{27}
+\bibcite{kiefer}{28}
+\bibcite{adam}{29}
+\bibcite{sumo}{30}
+\bibcite{suttonbarto}{31}
+\bibcite{varaiya2013}{32}
+\bibcite{wei2018}{33}
+\bibcite{chen2020}{34}
+\bibcite{highways}{35}
