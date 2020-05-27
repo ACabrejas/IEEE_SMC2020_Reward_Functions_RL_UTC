@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  22 MAY 2020 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  26 MAY 2020 19:25
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -487,37 +487,37 @@ Package pdftex.def Info: figures/phases_noped.png  used on input line 171.
 Underfull \vbox (badness 7362) has occurred while \output is active []
 
  [3 <./figures/intersection.png> <./figures/phases_noped.png>] [4]
-<figures/table.png, id=35, 1117.17375pt x 830.35219pt>
+<figures/table.png, id=35, 971.12813pt x 691.83469pt>
 File: figures/table.png Graphic file (type png)
 <use figures/table.png>
 Package pdftex.def Info: figures/table.png  used on input line 328.
-(pdftex.def)             Requested size: 252.0pt x 187.30264pt.
-<figures/rand_2_1_ordered_color_DS.jpg, id=36, 496.254pt x 390.7398pt>
+(pdftex.def)             Requested size: 252.0pt x 179.5244pt.
+<figures/rand_2_1_ordered_color_DS.jpg, id=36, 496.0131pt x 390.4989pt>
 File: figures/rand_2_1_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_2_1_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_2_1_ordered_color_DS.jpg  used on input l
 ine 337.
-(pdftex.def)             Requested size: 252.0pt x 198.4161pt.
-<figures/rand_1_7_ordered_color_DS.jpg, id=37, 496.254pt x 390.7398pt>
+(pdftex.def)             Requested size: 252.0pt x 198.39507pt.
+<figures/rand_1_7_ordered_color_DS.jpg, id=37, 496.0131pt x 390.4989pt>
 File: figures/rand_1_7_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_1_7_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_1_7_ordered_color_DS.jpg  used on input l
 ine 344.
-(pdftex.def)             Requested size: 252.0pt x 198.4161pt.
-<figures/rand_1_5_ordered_color_DS.jpg, id=38, 496.254pt x 390.7398pt>
+(pdftex.def)             Requested size: 252.0pt x 198.39507pt.
+<figures/rand_1_5_ordered_color_DS.jpg, id=38, 496.0131pt x 390.4989pt>
 File: figures/rand_1_5_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_1_5_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_1_5_ordered_color_DS.jpg  used on input l
 ine 351.
-(pdftex.def)             Requested size: 252.0pt x 198.4161pt.
-<figures/stacked_average_delay_ordered_by_sum_DS.jpg, id=39, 496.254pt x 390.73
-98pt>
+(pdftex.def)             Requested size: 252.0pt x 198.39507pt.
+<figures/stacked_average_delay_ordered_by_sum_DS.jpg, id=39, 496.0131pt x 390.4
+989pt>
 File: figures/stacked_average_delay_ordered_by_sum_DS.jpg Graphic file (type jp
 g)
 <use figures/stacked_average_delay_ordered_by_sum_DS.jpg>
 Package pdftex.def Info: figures/stacked_average_delay_ordered_by_sum_DS.jpg  u
 sed on input line 358.
-(pdftex.def)             Requested size: 252.0pt x 198.4161pt.
+(pdftex.def)             Requested size: 252.0pt x 198.39507pt.
  [5]
 Underfull \hbox (badness 2065) in paragraph at lines 372--373
 []\OT1/ptm/m/n/10 Throughput was found to be con-sis-tently the worst-
@@ -541,7 +541,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  5506 strings out of 481545
  86853 string characters out of 2909744
- 348539 words of memory out of 3000000
+ 349539 words of memory out of 3000000
  20668 multiletter control sequences out of 15000+200000
  570953 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -566,9 +566,9 @@ X 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/acabrejasegea/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/acabrejasegea/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/acabr
 ejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (8 pages, 1655028 bytes).
+Output written on conference_101719.pdf (8 pages, 3330157 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

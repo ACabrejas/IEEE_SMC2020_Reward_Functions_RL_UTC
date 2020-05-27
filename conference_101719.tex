@@ -254,9 +254,9 @@ The reward will be the negative aggregated waiting time as above, but in this ca
 \subsection{Time Lost based Rewards}
 \subsubsection{Time Lost}
 Used in \cite{wan2018}, the reward will be the negative aggregated delay accumulated by all vehicles upstream from the intersection, understanding the delay as deviations from the vehicle's maximum allowed speed ($s_{max}$). 
-Assuming a simulator time step of length $ts$:
+Assuming a simulator time step of length $\delta$:
 \begin{equation}
-    r_t = - \sum_{v \in V_t}  \sum_{t^p}^t ts * \big( 1-\frac{s_v}{s_{max}} \big)
+    r_t = - \sum_{v \in V_t}  \sum_{t^p}^t \delta \big( 1-\frac{s_v}{s_{max}} \big)
 \label{eq:delay}
 \end{equation}
 This reward provides a more accurate representation of the total delay caused, since it also accounts for all deceleration happening around the intersection. 
@@ -266,15 +266,15 @@ Introduced in \cite{abdulhai2010} and used in \cite{mannion} \cite{genders2016} 
 Similar to Eq. (\ref{eq:delta_wait_time}).
 The reward will be the change of global delay in the vehicles around the intersection since the last action was taken.
 \begin{equation}
-   r_t = \sum_{v \in V_t}  \sum_{t^{pp}}^{t^p} ts * \big( 1-\frac{s_v}{s_{max}} \big) - \sum_{v \in V_t}  \sum_{t^p}^t ts * \big( 1-\frac{s_v}{s_{max}} \big)
+   r_t = \sum_{v \in V_t}  \sum_{t^{pp}}^{t^p} \delta  \big( 1-\frac{s_v}{s_{max}} \big) - \sum_{v \in V_t}  \sum_{t^p}^t \delta  \big( 1-\frac{s_v}{s_{max}} \big)
 \label{eq:changedelay} 
 \end{equation}
 This reward function provides both punishment and reward centered around zero.
 
 \subsubsection{Delay Adjusted by Demand}
-The reward will be the same as in the point above, but divided by an estimate of the demand level.
+The reward will be the same as in the point above, but divided by an estimate of the demand level ($\hat{d}$).
 \begin{equation}
-    r_t = -\frac{1}{\hat{d}} \sum_{v\in V_t}  \sum_{t^p}^t ts * \big( 1-\frac{s_v}{s_{max}} \big)
+    r_t = -\frac{1}{\hat{d}} \sum_{v\in V_t}  \sum_{t^p}^t \delta  \big( 1-\frac{s_v}{s_{max}} \big)
 \label{eq:delay_dn}
 \end{equation}
 
@@ -282,14 +282,14 @@ The reward will be the same as in the point above, but divided by an estimate of
 \subsubsection{Average Speed}
 This reward seeks to maximise the average joint speed of all vehicles around an area of influence around the intersection.
 \begin{equation}
-    r_t = \frac{1}{\sum_{V_t} v} \sum_{v \in V_t} s
+    r_t = \frac{1}{\sum_{V_t} v} \sum_{v \in V_t} \big( \frac{s_v}{s_{max}} \big)
 \label{eq:avgspeed}
 \end{equation}
 
-\subsubsection{Average Speed Scaled by Demand}
-The reward will be, as in the previous section, multiplied by an estimation of the demand. This function scales the reward with the difficulty of the task.
+\subsubsection{Average Speed Adjusted by Demand}
+The reward will be, as in the previous section, but multiplied by an estimation of the demand ($\hat{d}$). This function scales the reward with the difficulty of the task.
 \begin{equation}
-    r_t = \frac{\hat{d}}{\sum_{V_t} v} \sum_{v \in V_t} s
+    r_t = \frac{\hat{d}}{\sum_{V_t} v} \sum_{v \in V_t} \big( \frac{s_v}{s_{max}} \big)
 \label{eq:avgspeed_dn}
 \end{equation}
 
@@ -302,7 +302,7 @@ The reward will be the total number of vehicles that cleared the intersection be
 \end{equation}
 
 \subsubsection{Other reward functions}
-There are several other reward functions which were not considered. For example minimising the frequency of signal change \cite{vanderpol2016} \cite{wei2018}, and accident avoidance \cite{vanderpol2016}: both of these concerns are already addressed by traffic signal controllers. Also, pressure has been used as a reward function in the control of a large network \cite{yau} \cite{wei2019} \cite{varaiya2013} \cite{wei2018} \cite{wei2019a} \cite{chen2020} and achieved good results; however, this requires data from upstream and downstream of the target junction, so is beyond the current scope.
+There are several other reward functions which were not considered. For example minimising the frequency of signal change \cite{vanderpol2016} \cite{wei2018}, and accident avoidance \cite{vanderpol2016}: both of these concerns are already addressed by traffic signal controllers. Also, pressure has been used as a reward function in the control of a large network \cite{wei2019a} \cite{yau} \cite{wei2019} \cite{varaiya2013} \cite{wei2018}  \cite{chen2020} and achieved good results; however, this requires data from upstream and downstream of the target junction, so is beyond the current scope.
 
 \section{Experimental Setup}\label{exp_setup}
 \subsection{Training Process}
