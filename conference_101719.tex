@@ -131,7 +131,9 @@ All layers use ReLU as an activation function. The network weights are optimised
 \begin{algorithm}
 \SetAlgoLined
  Initialise agent network with random parameters $\theta$\;
+ Initialise target network with random parameters $\theta$'\;
  Initialise memory $M$ with capacity $L$\;
+ Define frequency $F$ for copying weights to target network\;
  \For{each episode}{ 
     measure initial state $s_0$\;
     \While{episode not done}{
@@ -147,6 +149,9 @@ All layers use ReLU as an activation function. The network weights are optimised
         $y_i = r_{i+1} + \gamma \max_{a} Q(s_{i+1}, a', \theta')$
         }
     perform a step of Stochastic Gradient Descent on $\theta$ over all $(x_i,y_i) \in b$\;
+    \If{number of episode is multiple of $F$}{
+        $\theta' \leftarrow \theta$
+        }
     }
  \caption{Schematic Learning Process}
 \end{algorithm}
