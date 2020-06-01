@@ -20,3 +20,10 @@ We find that speed maximisation resulted in the lowest average waiting times acr
         <p>This browser does not support displaying PDFs here. Please go to the location of the full PDF to view it: <a href="https://github.com/ACabrejas/SMC2020_Reward_Functions_RL_UTC/blob/master/conference_101719.pdf">View PDF</a>.</p>
     </embed>
 </object>
+
+## Results
+![](figures/rand_2_1_ordered_color_DS.jpg)
+![](figures/rand_1_7_ordered_color_DS.jpg)
+![](figures/rand_1_5_ordered_color_DS.jpg)
+![](figures/stacked_average_delay_ordered_by_sum_DS.jpg)
+![](figures/table.png)
