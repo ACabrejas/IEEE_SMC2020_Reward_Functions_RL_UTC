@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  27 MAY 2020 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  26 AUG 2020 17:36
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -470,53 +470,54 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <figures/rl.PNG, id=9, 600.74437pt x 611.28375pt>
 File: figures/rl.PNG Graphic file (type png)
 <use figures/rl.PNG>
-Package pdftex.def Info: figures/rl.PNG  used on input line 104.
+Package pdftex.def Info: figures/rl.PNG  used on input line 105.
 (pdftex.def)             Requested size: 252.0pt x 256.42029pt.
  [2 <./figures/rl.PNG>]
 <figures/intersection.png, id=25, 675.27281pt x 576.65437pt>
 File: figures/intersection.png Graphic file (type png)
 <use figures/intersection.png>
-Package pdftex.def Info: figures/intersection.png  used on input line 168.
+Package pdftex.def Info: figures/intersection.png  used on input line 169.
 (pdftex.def)             Requested size: 252.0pt x 215.19777pt.
 <figures/phases_noped.png, id=26, 426.09187pt x 453.19313pt>
 File: figures/phases_noped.png Graphic file (type png)
 <use figures/phases_noped.png>
-Package pdftex.def Info: figures/phases_noped.png  used on input line 176.
+Package pdftex.def Info: figures/phases_noped.png  used on input line 177.
 (pdftex.def)             Requested size: 252.0pt x 268.03165pt.
  [3 <./figures/intersection.png>] [4 <./figures/phases_noped.png>]
 <figures/table.png, id=35, 971.12813pt x 691.83469pt>
 File: figures/table.png Graphic file (type png)
 <use figures/table.png>
-Package pdftex.def Info: figures/table.png  used on input line 333.
+Package pdftex.def Info: figures/table.png  used on input line 337.
 (pdftex.def)             Requested size: 252.0pt x 179.5244pt.
 <figures/rand_2_1_ordered_color_DS.jpg, id=36, 496.0131pt x 390.4989pt>
 File: figures/rand_2_1_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_2_1_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_2_1_ordered_color_DS.jpg  used on input l
-ine 342.
+ine 346.
 (pdftex.def)             Requested size: 252.0pt x 198.39507pt.
-<figures/rand_1_7_ordered_color_DS.jpg, id=37, 496.0131pt x 390.4989pt>
+ [5]
+<figures/rand_1_7_ordered_color_DS.jpg, id=40, 496.0131pt x 390.4989pt>
 File: figures/rand_1_7_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_1_7_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_1_7_ordered_color_DS.jpg  used on input l
-ine 349.
+ine 353.
 (pdftex.def)             Requested size: 252.0pt x 198.39507pt.
-<figures/rand_1_5_ordered_color_DS.jpg, id=38, 496.0131pt x 390.4989pt>
+<figures/rand_1_5_ordered_color_DS.jpg, id=41, 496.0131pt x 390.4989pt>
 File: figures/rand_1_5_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_1_5_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_1_5_ordered_color_DS.jpg  used on input l
-ine 356.
+ine 360.
 (pdftex.def)             Requested size: 252.0pt x 198.39507pt.
-<figures/stacked_average_delay_ordered_by_sum_DS.jpg, id=39, 496.0131pt x 390.4
+<figures/stacked_average_delay_ordered_by_sum_DS.jpg, id=42, 496.0131pt x 390.4
 989pt>
 File: figures/stacked_average_delay_ordered_by_sum_DS.jpg Graphic file (type jp
 g)
 <use figures/stacked_average_delay_ordered_by_sum_DS.jpg>
 Package pdftex.def Info: figures/stacked_average_delay_ordered_by_sum_DS.jpg  u
-sed on input line 363.
+sed on input line 367.
 (pdftex.def)             Requested size: 252.0pt x 198.39507pt.
- [5]
-Underfull \hbox (badness 2065) in paragraph at lines 377--378
+
+Underfull \hbox (badness 2065) in paragraph at lines 381--382
 []\OT1/ptm/m/n/10 Throughput was found to be con-sis-tently the worst-
  []
 
@@ -538,7 +539,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  5506 strings out of 481545
  86853 string characters out of 2909744
- 349539 words of memory out of 3000000
+ 348539 words of memory out of 3000000
  20668 multiletter control sequences out of 15000+200000
  570953 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -563,7 +564,7 @@ X 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/acabrejasegea/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/acabrejasegea/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/acabr
 ejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (8 pages, 3330680 bytes).
+Output written on conference_101719.pdf (8 pages, 3331031 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

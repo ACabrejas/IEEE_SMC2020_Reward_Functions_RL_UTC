@@ -68,25 +68,28 @@ Maksis Knutins $^\ddag$ \\
 \maketitle
 
 \begin{abstract}
-Optimisation of Traffic Signal Control Systems is an important real-world challenge that has direct impact on the economy and quality of life of urban areas.
-Recently, Reinforcement Learning is proving to be a successful tool that can effectively manage urban intersections with a fraction of the effort required to curate traditional Urban Traffic Controllers. 
-%However, literature on the introduction and control of pedestrians to such intersections is scarce, and comparisons between the effect of the different approaches that can be taken in terms of architecture, state space or rewards are uncommon.
-This paper adds on the authors' previous work, performing a robust comparison between 30 different Reinforcement Learning reward functions for controlling intersections serving vehicles and pedestrians. 
-We use a calibrated model in terms of demand, sensors, green times and other operational constraints of a real intersection in Greater Manchester, UK. 
-Sensory inputs are restricted to what can be achieved with current vision-based sensors, such as those from Vivacity Labs.
-The rewards can be broadly classified in 5 groups depending on the magnitudes used: queues, waiting time, delay, average speed and throughput in the junction.
- The performance of different agents, in terms of waiting time, is compared across different demand levels ranging from normal operation to saturation of traditional adaptive controllers.
-We find that those rewards maximising the speed of the network obtain the lowest waiting time for vehicles and pedestrians simultaneously, closely followed by queue minimisation, demonstrating better performance than other methods proposed in the literature.
+Adaptive traffic signal control is one key avenue for mitigating the growing consequences of traffic congestion.
+Incumbent solutions such as SCOOT and SCATS require regular and time-consuming calibration, can't optimise well for multiple road use modalities, and require the manual curation of many implementation plans.
 
+A recent alternative to these approaches are deep reinforcement learning algorithms, in which an agent learns how to take the most appropriate action for a given state of the system.
+This is guided by neural networks approximating a reward function that provides feedback to the agent regarding the performance of the actions taken, making it sensitive to the specific reward function chosen.
+Several authors have surveyed the reward functions used in the literature, but attributing outcome differences to reward function choice across works is problematic as there are many uncontrolled differences, as well as different outcome metrics.
+
+This paper compares the performance of agents using different reward functions in a simulation of a junction in Greater Manchester, UK, across various demand profiles, subject to real world constraints: realistic sensor inputs, controllers, calibrated demand, intergreen times and stage sequencing. 
+The reward metrics considered are based on the time spent stopped, lost time, change in lost time, average speed, queue length, junction throughput and variations of these magnitudes.
+The performance of these reward functions is compared in terms of total waiting time.
+We find that speed maximisation resulted in the lowest average waiting times across all demand levels, displaying significantly better performance than other rewards previously introduced in the literature.
 \end{abstract}
+
 
 \section{Introduction}
 Improving the operation of urban road networks can significantly reduce traffic congestion, as well as promote active travel and public transport within a city and reduce emissions.
 Optimising the timings of adaptive traffic signals can play a large role in achieving this by making effective use of green lights in response to the demand levels on each approach to a junction and by promoting progression across multiple junctions.
 In the UK, the main incumbent algorithms are 'Microprocessor Optimised Vehicle Actuation' (MOVA) \cite{MOVA} for isolated junctions, and 'Split, Cycle and Offset Optimisation technique' (SCOOT) \cite{SCOOT} for regions of  up to 30 signalised junctions.
 However, these algorithms have been improved only incrementally since their initial development in the 1980s, and so do not take advantage of either modern traffic data sources, nor modern computational resources. Modern traffic data sources, such as vision-based above-ground detectors, are able to provide much richer information about the road network, for example by providing live occupancy, flow, class of vehicle (e.g. car, van, bus) and individual vehicles' positions and speeds.
+These, combined with advances in GPU technology, have paved the way for real-time machine learning approaches in this field, with deep reinforcement learning showing promising results. 
 
-Reinforcement learning (RL) has been investigated as a potential next step in urban traffic control (UTC) systems, demonstrating the potential to outperform even well-calibrated systems currently in use \cite{wei2019a}.
+Reinforcement learning (RL) has been investigated in recent years as a potential next step in urban traffic control (UTC) systems, demonstrating the potential to outperform even well-calibrated systems currently in use \cite{wei2019a}.
 However, most of the work to date is not intended to be directly applied to the real world. As such, all observed works in the literature overlook operational limitations of this application of RL.
 Further, there is a gap in the literature regarding the choice of reward function for such an RL system, which is a critical aspect.
 This paper provides a robust comparison of reward functions for RL, in the context of a junction in Greater Manchester, UK, a simulation of which has been calibrated using extensive data from Vivacity Labs vision-based sensors.
@@ -129,7 +132,7 @@ This approach treats the problem as a Markov Decision Process (MDP), defined in 
 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=.5\linewidth]{figures/rl.PNG}
+    \includegraphics[width=0.5\linewidth]{figures/rl.PNG}
     \caption{Schematic representation of information flows between Environment and Agent in a Reinforcement Learning framework.}
     \label{fig:RL}
 \end{figure}
@@ -190,10 +193,9 @@ This junction is modelled using the microscopic traffic simulator SUMO \cite{sum
 A stage is defined as a group of non-conflicting green lights (phases) in a junction.
 The Agent decides which stage to select next and requests this from an emulated traffic signal controller, which moves to that stage subject to its limitations. These limitations are primarily safety-related and examples include enforcing minimum green times, minimum intergreen times, and stage transitions that match reality.
 The site features four Vivacity vision-based sensors which can provide flow, queue length and speed data. The data available to the agent is restricted to what can be obtained from these sensors.
-
-\begin{figure}[thpb]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=.5\linewidth]{figures/intersection.png}
+    \includegraphics[width=0.5\linewidth]{figures/intersection.png}
     \caption{Intersection model in SUMO.}
     \label{fig:intersection}
 \end{figure}
@@ -201,7 +203,7 @@ The site features four Vivacity vision-based sensors which can provide flow, que
 This paper does not consider pedestrians, thus promoting comparability with prior work; pedestrians will be considered for future work. 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=.5\linewidth]{figures/phases_noped.png}
+    \includegraphics[width=0.5\linewidth]{figures/phases_noped.png}
     \caption{Allowed stages in the intersection (Stage 3 only serves pedestrians so isn't used). Stage 1 is an intermediate stage required to reach stage 2.}
     \label{fig:phases}
 \end{figure}
@@ -230,6 +232,8 @@ Regarding the extensions, given that their length is smaller than that of the in
 
 \section{Reward Functions} \label{rewards}
 In this section the individually tested reward functions are introduced.
+Some of these have been obtained from the literature and are indicated as such, while some others are being first proposed here.
+Any modifications to previously used functions are also stated.
 
 Let $N$ be the set of lane queue sensors present in the intersection.
 Let $V_t$ be the set of vehicles on incoming lanes in the intersection at time $t$, let $s$ be their individual speeds, $\tau$ their waiting times, and $\rho$ the flow across the intersection over the length of the action.
@@ -345,6 +349,7 @@ In each training run, the agent is subject to a training curriculum including a 
 Ten training runs were conducted for each of the reward functions described in the following section, to capture variance in training run outcome.
 
 \subsection{Evaluation and Scoring}
+The performance assessment is done in terms of waiting time, a common metric used in traffic signal optimisation.
 After each training run is complete, the agent's performance is evaluated and compared to that of reference agents. Two reference agents have been implemented to give context to the RL performance: Maximum Occupancy (longest queue first) and a Vehicle Actuated Controller. The Vehicle Actuated algorithm was an implementation of System D \cite{highways}, a common algorithm in the UK.  For each training run, the RL and reference agents are each tested on 300 scenarios: this is 100 scenarios at each of 3 demand levels. In each repetition the average waiting (stopped) time for all vehicles was computed.
 
 The first scenario involves a demand of 1714 vehicles/hour (1 vehicle/2.1 seconds), and will be referred as Low Demand scenario.
@@ -358,7 +363,7 @@ In this section, the distribution of average waiting times per vehicle across th
 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=.5\linewidth]{figures/table.png}
+    \includegraphics[width=0.7\linewidth]{figures/table.png}
     \label{fig:table}
 \end{figure}
 
@@ -367,28 +372,28 @@ The throughput reward function is not shown to improve graph readability, as it 
 Complete corresponding results are reported in Table I.
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=.7\linewidth]{figures/rand_2_1_ordered_color_DS.jpg}
+    \includegraphics[width=0.7\linewidth]{figures/rand_2_1_ordered_color_DS.jpg}
     \caption{Distribution and medians of average waiting time in seconds across agents in Low Demand scenario. Sub-saturation demand of 1714 vehicles/hour (1 vehicle/2.1 seconds).}
     \label{fig:low}
 \end{figure}
 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=.7\linewidth]{figures/rand_1_7_ordered_color_DS.jpg}
+    \includegraphics[width=0.7\linewidth]{figures/rand_1_7_ordered_color_DS.jpg}
     \caption{Distribution and medians of average waiting time in seconds across agents in Medium Demand scenario. Near-saturation demand of 2117 vehicles/hour (1 vehicle/1.7 seconds).}
     \label{fig:mid}
 \end{figure}
 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=.7\linewidth]{figures/rand_1_5_ordered_color_DS.jpg}
+    \includegraphics[width=0.7\linewidth]{figures/rand_1_5_ordered_color_DS.jpg}
     \caption{Distribution and medians of average waiting time in seconds across agents in High Demand scenario. Over-saturation demand of 2400 vehicles/hour (1 vehicle/1.5 seconds).}
     \label{fig:high}
 \end{figure}
 
 \begin{figure}[thpb]
     \centering
-    \includegraphics[width=.7\linewidth]{figures/stacked_average_delay_ordered_by_sum_DS.jpg}
+    \includegraphics[width=0.7\linewidth]{figures/stacked_average_delay_ordered_by_sum_DS.jpg}
     \caption{Stacked bar chart of Average Waiting Time across scenarios.}
     \label{fig:stack}
 \end{figure}
@@ -401,9 +406,7 @@ From those rewards using queues, Queues Squared performed best, except for the H
 The results from agents using reward functions based on either Wait Time or Time Lost are inconsistent across different demand levels.
 While sum of Time Lost is the third best-performing agent at High Demand, it is sixth in Medium Demand and Tenth in Low Demand.
 Sum of Wait Time follows an inverse, yet less extreme trajectory as the demand is lowered, from worse to better performance.
-
 Throughput was found to be consistently the worst-performing of the reward functions tested.
-
 The rewards based on difference in delay (Delta Wait Time and Delta Time Lost), which were used in seven previous items of research as a most desirable reward function, were amongst the worst performers.
 
 %\addtolength{\textheight}{-3.5cm} 
@@ -418,7 +421,7 @@ In busier conditions, which are more important to transport authorities, RL prov
 
 Rewarding based on delay minimisation or stopped time may perform worse than speed-based rewards as they encode information about previous timesteps, whereas queue lengths and vehicle speeds are snapshots at a single timestep, which better suits the underpinning Markov Decision Process framing of the problem.
 Speed maximisation may have yielded better results than queue minimisation under high demand as it penalises the agent for vehicles which are moving slowly forward in congested conditions, which would not have been penalised by the queue length reward.
-This would also not have been captured by the stopped time reward, which may explain its worse performance overall. One key finding is that whilst rewards based on difference in delay were found to perform well in earlier works, this was found to perform poorly in the present work.
+This would also not have been captured by the stopped time reward, which may explain its worse performance overall, even while being the target metric. One key finding is that whilst rewards based on difference in delay were found to perform well in earlier works, this was found to perform poorly in the present work.
 The Maximum Occupancy reference agent performs well at low demand, but mediocre at medium demand and poorly at high demand.
 It does not extend stage durations in busy traffic when the density of vehicles using the active stage is slightly lower than that of stationary queuing traffic.
 This results in shorter than optimal stage lengths and so too much time is wasted in interstage transitions.
@@ -429,13 +432,13 @@ From a visual inspection via the simulator of the best RL agent's behaviour, it 
 A key benefit to the DQN approach is that it can learn how eagerly it should extend stages under varying conditions at a specific site, rather than requiring manual calibration.
 This automated calibration can be repeated regularly so that the site continues to perform well long-term without manual intervention.
 
+The methodology presented in this paper can be easily translated to other intersections.
+The main requirements are a topologically accurate model of the target intersection, a realistic demand distribution, a set of sensors reporting the required state variables of the system, and a set of allowed actions on which to train the agent.
+
 One limitation of the study is that the results presented only relate to the training of a deep Q-learning agent as specified in Section \ref{methods}, and are not necessarily representative of the performance in other type of architectures such as those representing the state as an image and processing it with Convolutional Neural Networks, or Policy Gradient methods.
 Another limitation is that most intersections found in an urban setting do not exclusively serve vehicles. As stated in Section \ref{methods}, a similar exploration including pedestrians is left as future work for modal prioritisation based rewards.
 
-
-
 \section*{Acknowledgment}
-
 A.C.E thanks N. Walton and W. Chernicoff for the insights and discussions that led to this paper, and the Toyota Mobility Foundation for previous support that made this work possible. Vivacity Labs thanks Transport for Greater Manchester for helping take this work from simulation to the real world, Immense for their work calibrating the simulation model, and InnovateUK for funding that made the work possible.
 
 %\addtolength{\textheight}{-1.5cm} 

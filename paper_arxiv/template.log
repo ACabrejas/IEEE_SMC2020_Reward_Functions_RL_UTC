@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  25 AUG 2020 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  26 AUG 2020 17:14
 entering extended mode
 **./template.tex
 (template.tex
@@ -763,91 +763,94 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 {C:/Users/acabrejasegea/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-19.
+22.
 
 ("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1
 ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [2]
-<figures/rl.PNG, id=219, 600.74437pt x 611.28375pt>
+)
+Underfull \vbox (badness 2635) has occurred while \output is active []
+
+ [2]
+<figures/rl.PNG, id=217, 600.74437pt x 611.28375pt>
 File: figures/rl.PNG Graphic file (type png)
 <use figures/rl.PNG>
-Package pdftex.def Info: figures/rl.PNG  used on input line 132.
+Package pdftex.def Info: figures/rl.PNG  used on input line 135.
 (pdftex.def)             Requested size: 234.87749pt x 238.99666pt.
+
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
  [3 <./figures/rl.PNG>]
-<figures/intersection.png, id=244, 675.27281pt x 576.65437pt>
+<figures/intersection.png, id=240, 675.27281pt x 576.65437pt>
 File: figures/intersection.png Graphic file (type png)
 <use figures/intersection.png>
-Package pdftex.def Info: figures/intersection.png  used on input line 196.
+Package pdftex.def Info: figures/intersection.png  used on input line 198.
 (pdftex.def)             Requested size: 234.87749pt x 200.57379pt.
-<figures/phases_noped.png, id=245, 426.09187pt x 453.19313pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/phases_noped.png, id=241, 426.09187pt x 453.19313pt>
 File: figures/phases_noped.png Graphic file (type png)
 <use figures/phases_noped.png>
-Package pdftex.def Info: figures/phases_noped.png  used on input line 204.
+Package pdftex.def Info: figures/phases_noped.png  used on input line 206.
 (pdftex.def)             Requested size: 234.87749pt x 249.82402pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./figures/intersection.png>] [5 <./figures/phases_noped.png>] [6] [7]
-<figures/table.png, id=310, 971.12813pt x 691.83469pt>
+[4] [5 <./figures/intersection.png> <./figures/phases_noped.png>] [6] [7]
+<figures/table.png, id=308, 971.12813pt x 691.83469pt>
 File: figures/table.png Graphic file (type png)
 <use figures/table.png>
-Package pdftex.def Info: figures/table.png  used on input line 361.
-(pdftex.def)             Requested size: 234.87749pt x 167.32104pt.
-<figures/rand_2_1_ordered_color_DS.jpg, id=313, 496.0131pt x 390.4989pt>
+Package pdftex.def Info: figures/table.png  used on input line 366.
+(pdftex.def)             Requested size: 328.82706pt x 234.24948pt.
+<figures/rand_2_1_ordered_color_DS.jpg, id=311, 496.0131pt x 390.4989pt>
 File: figures/rand_2_1_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_2_1_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_2_1_ordered_color_DS.jpg  used on input l
-ine 370.
+ine 375.
 (pdftex.def)             Requested size: 328.82706pt x 258.88007pt.
- [8 <./figures/table.png>]
-<figures/rand_1_7_ordered_color_DS.jpg, id=323, 496.0131pt x 390.4989pt>
+
+[8]
+<figures/rand_1_7_ordered_color_DS.jpg, id=322, 496.0131pt x 390.4989pt>
 File: figures/rand_1_7_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_1_7_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_1_7_ordered_color_DS.jpg  used on input l
-ine 377.
+ine 382.
 (pdftex.def)             Requested size: 328.82706pt x 258.88007pt.
-<figures/rand_1_5_ordered_color_DS.jpg, id=324, 496.0131pt x 390.4989pt>
+<figures/rand_1_5_ordered_color_DS.jpg, id=323, 496.0131pt x 390.4989pt>
 File: figures/rand_1_5_ordered_color_DS.jpg Graphic file (type jpg)
 <use figures/rand_1_5_ordered_color_DS.jpg>
 Package pdftex.def Info: figures/rand_1_5_ordered_color_DS.jpg  used on input l
-ine 384.
+ine 389.
 (pdftex.def)             Requested size: 328.82706pt x 258.88007pt.
-<figures/stacked_average_delay_ordered_by_sum_DS.jpg, id=325, 496.0131pt x 390.
+<figures/stacked_average_delay_ordered_by_sum_DS.jpg, id=324, 496.0131pt x 390.
 4989pt>
 File: figures/stacked_average_delay_ordered_by_sum_DS.jpg Graphic file (type jp
 g)
 <use figures/stacked_average_delay_ordered_by_sum_DS.jpg>
 Package pdftex.def Info: figures/stacked_average_delay_ordered_by_sum_DS.jpg  u
-sed on input line 391.
+sed on input line 396.
 (pdftex.def)             Requested size: 328.82706pt x 258.88007pt.
- [9 <./figures/rand_2_1_ordered_color_DS.jpg>] [10 <./figures/rand_1_7_ordered_
-color_DS.jpg> <./figures/rand_1_5_ordered_color_DS.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [9 <./figures/table.png> <./figures/rand_2_1_ordered_color_DS.jpg>]
+[10 <./figures/rand_1_7_ordered_color_DS.jpg> <./figures/rand_1_5_ordered_color
+_DS.jpg>] [11 <./figures/stacked_average_delay_ordered_by_sum_DS.jpg>] [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
 
- [11 <./figures/stacked_average_delay_ordered_by_sum_DS.jpg>] [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
  (template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 481.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 481.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 44DB9565FD4D9EA329D55169FA41F2E8;2317.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
  ) 
 Here is how much of TeX's memory you used:
- 13304 strings out of 481545
- 248252 string characters out of 2909744
- 623174 words of memory out of 3000000
+ 13302 strings out of 481545
+ 248234 string characters out of 2909744
+ 623308 words of memory out of 3000000
  28038 multiletter control sequences out of 15000+200000
- 584646 words of font info for 187 fonts, out of 3000000 for 9000
+ 583566 words of font info for 186 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,14n,49p,918b,824s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,49p,918b,822s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/bas
 e/8r.enc} <C:\Users\acabrejasegea\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\ectt1000.pk><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTe
@@ -868,9 +871,9 @@ ymbols/msbm10.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmb8a.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/acabrejasegea/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (13 pages, 3370082 bytes).
+Output written on template.pdf (13 pages, 3368623 bytes).
 PDF statistics:
  452 PDF objects out of 1000 (max. 8388607)
  108 named destinations out of 1000 (max. 500000)
- 33081 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 31033 words of extra memory for PDF output out of 35830 (max. 10000000)
 
