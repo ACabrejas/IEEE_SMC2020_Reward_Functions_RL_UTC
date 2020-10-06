@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  26 AUG 2020 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.22)  6 OCT 2020 15:32
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
 LaTeX2e <2020-02-02> patch level 3
-L3 programming layer <2020-02-21> (IEEEtran.cls
+L3 programming layer <2020-02-14> (IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -17,8 +17,8 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 03.
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1
-ptm.fd"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1pt
+m.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -115,36 +115,36 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 )
 ** ATTENTION: Overriding command lockouts (line 2).
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cite\cite.
-sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cite\cite.st
+y"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\am
-smath.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsm
+ath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\am
-stext.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amst
+ext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\am
-sgen.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsg
+en.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen158
 ))
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\am
-sbsy.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsb
+sy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen159
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\am
-sopn.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amso
+pn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count182
@@ -185,12 +185,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\a
-mssymb.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ams
+symb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\a
-msfonts.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ams
+fonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -198,58 +198,58 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\g
-raphicx.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\gra
+phicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\k
-eyval.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\key
+val.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\g
-raphics.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\gra
+phics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\t
-rig.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\tri
+g.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-c
-fg\graphics.cfg"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg
+\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-d
-ef\pdftex.def"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def
+\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen167
 \Gin@req@width=\dimen168
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithm2
-e\algorithm2e.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithm2e\
+algorithm2e.sty"
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count194
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthe
-n.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.
+sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip53
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage\
-ifoddpage.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage\if
+oddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count195
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspa
-ce.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspace
+.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/relsize\re
-lsize.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/relsize\rels
+ize.sty"
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip54
@@ -288,8 +288,8 @@ Package: relsize 2013/03/29 ver 4.1
 \algocf@algoframe=\box55
 \algocf@algobox=\box56
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\arra
-y.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.
+sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen175
 \ar@mcellbox=\box57
@@ -299,8 +299,8 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \backup@length=\skip73
 \ar@cellbox=\box58
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\b
-ooktabs.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\boo
+ktabs.sty"
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen177
 \lightrulewidth=\dimen178
@@ -320,35 +320,35 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count268
 \@thisrulewidth=\dimen189
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\ba
-bel.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babe
+l.sty"
 Package: babel 2020/02/14 3.40 The Babel package
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\sw
-itch.def"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\swit
+ch.def"
 File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblo
-pts.cfg"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopt
+s.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-engl
-ish\english.ldf"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-englis
+h\english.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\ba
-bel.def"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babe
+l.def"
 File: babel.def 2020/02/14 3.40 Babel common definitions
 \babel@savecnt=\count269
 \U@D=\dimen190
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\tx
-tbabel.def")
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtb
+abel.def")
 \bbl@readstream=\read2
 \bbl@dirlevel=\count270
 )
@@ -361,9 +361,9 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 ))
 ** ATTENTION: Overriding command lockouts (line 14).
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\
-l3backend-pdfmode.def"
-File: l3backend-pdfmode.def 2020-02-21 L3 backend support: PDF mode
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3
+backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count271
 \l__pdf_internal_box=\box59
 ) (conference_101719.aux)
@@ -386,8 +386,8 @@ LaTeX Font Info:    ... okay on input line 16.
 
 -- Lines per column: 56 (exact).
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mki
-i\supp-pdf.mkii"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\
+supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count272
 \scratchdimen=\dimen191
@@ -401,41 +401,41 @@ i\supp-pdf.mkii"
 \makeMPintoPDFobject=\count277
 \everyMPtoPDFconversion=\toks23
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-p
-kg\epstopdf-base.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg
+\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarer
-r\infwarerr.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\
+infwarerr.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/grfext\grf
-ext.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/grfext\grfex
+t.sty"
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefine
-keys\kvdefinekeys.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefineke
+ys\kvdefinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\
-kvoptions.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kv
+options.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\
-ltxcmds.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\lt
+xcmds.sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkey
-s\kvsetkeys.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\
+kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds
-\pdftexcmds.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\p
+dftexcmds.sty"
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\if
-tex.sty"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifte
+x.sty"
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -453,17 +453,17 @@ LaTeX Font Info:    Calculating math sizes for size <11> on input line 35.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
-msa.fd"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ums
+a.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 
 
-("C:\Users\acabrejasegea\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\u
-msb.fd"
+("C:\Users\ACE-Desktop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ums
+b.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/acabrejasegea/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1{C:/Users/ACE-Desktop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -537,34 +537,34 @@ Before submitting the final camera ready copy, remember to:
 
 [8] (conference_101719.aux) ) 
 Here is how much of TeX's memory you used:
- 5506 strings out of 481545
- 86853 string characters out of 2909744
- 348539 words of memory out of 3000000
- 20668 multiletter control sequences out of 15000+200000
+ 5506 strings out of 481553
+ 86614 string characters out of 2911008
+ 348366 words of memory out of 3000000
+ 20660 multiletter control sequences out of 15000+200000
  570953 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,13n,31p,922b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/acabrejasegea/AppData/Local/Programs/MiK
-TeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/acabrejasegea/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/acabrejasege
-a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi5.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/acabrejasegea/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/acabrejase
-gea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/acabrejasegea/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/acabrejas
-egea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb><C:/Users/acabrejasegea/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/acabrejasegea/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/acabrejasegea/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/acabr
-ejasegea/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (8 pages, 3331031 bytes).
+{C:/Users/ACE-Desktop/AppData/Local/Programs/MiKTe
+X 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/ACE-Desktop/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ACE-Desktop/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Use
+rs/ACE-Desktop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi5.pfb><C:/Users/ACE-Desktop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb><C:/Users/ACE-Desktop/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ACE-Desktop/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ACE-D
+esktop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Users/ACE-Desktop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy5.pfb><C:/Users/ACE-Desktop/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ACE-Desktop/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ACE-Desktop
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.p
+fb><C:/Users/ACE-Desktop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
+s/utmb8a.pfb><C:/Users/ACE-Desktop/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/urw/times/utmbi8a.pfb><C:/Users/ACE-Desktop/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ACE-Desktop/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (8 pages, 2917758 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
